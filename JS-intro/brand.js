@@ -1,11 +1,11 @@
 // company data
 
-companyName          = "CODEX"                          // string
-companyLegalName     = "CODEX ltd."
-companyContactPhone  = "+123456"
-companyActive        = true                           // boolean
-companyRating        = 4.5                            // number
-companySlogan        = "Coding with eXperience"
+let companyName          = "CODEX"                          // string
+let companyLegalName     = "CODEX ltd."
+let companyContactPhone  = "+123456"
+let companyActive        = true                           // boolean
+let companyRating        = 4.5                            // number
+let companySlogan        = "Coding with eXperience"
 
 
 
