@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Running JS</title>
+</head>
+<body>
+    <!--
+
+    ONLINE SHOP:
+
+      * layers / fragments
+      * variables
+      * operators
+      * types
+      * io / prompt, alert
+      * string
+
+    -->
+    
+    <script>
+         // ONLINE SHOP main CODE
+
+         // 1. DATA
+        const productName1  = 'Samsung Galaxy'    // string
+        const productPrice1 = 359.99
+        const productName2  = 'Xiaomi 8 Note'    
+        const productPrice2 = 145.00
+        const productName3 = 'Iphone 13 pro'    
+        const productPrice3 = 599.99            // number (float)
+        //const equal = '='
+        //const paddedequal = equal.padStart(10, '-').padEnd(20, '+')
+
+       
+        
+        // 2. CATALOG
+        let q1 = +prompt('CATALOG' + '\n'+'___________________' + '\n'+"Product:"+ " "+ productName1 + '\n' + "Price:" + " "+ productPrice1.toFixed(2)+'\n'+ '___________________' )  
+        let q2 = +prompt('CATALOG' + '\n'+'___________________' + '\n'+"Product:"+ " "+ productName2 + '\n' + "Price:" + " "+ productPrice2.toFixed(2)+'\n'+ '___________________' )
+        let q3 = +prompt('CATALOG' + '\n'+'___________________' + '\n'+"Product:"+ " "+ productName3 + '\n' + "Price:" + " "+ productPrice3.toFixed(2)+'\n'+ '___________________' )
+
+        // +"2"  --> converts string to number
+        // alert(typeof q)
+
+        // 3. CALCULUS
+        let total1 = productPrice1 * q1
+        let total2 = productPrice2 * q2
+        let total3 = productPrice3* q3
+       
+        // 4. OUTPUT
+
+        
+
+        //   ////////////////////////   HW:   ///////////////////////   //
+
+
+
+
+
+
+        //let alertText = "Your order:" + '\n' + productName + "   " + 'x' + "   " + q + "   " + "=" + "   " + total.toFixed(2)
+        
+         //alert(alertText)
+       
+       
+        let textAlert = "Your order:" + '\n' + productName1.padEnd(productName1.length + 3) + 'x'.padEnd("x".length + 3)+ q1 + "=".padStart("=".length + 3).padEnd("=".length + 6) + total1.toFixed(2)+ '\n' + productName2.padEnd(productName2.length + 3) + 'x'.padEnd("x".length + 3)+ q2 + "=".padStart("=".length + 3).padEnd("=".length + 6) + total2.toFixed(2)+ '\n' + productName3.padEnd(productName3.length + 3) + 'x'.padEnd("x".length + 3)+ q3 + "=".padStart("=".length + 3).padEnd("=".length + 6) + total3.toFixed(2)
+
+         alert(textAlert)
+        
+
+    
+       //   ////////////////////////////////////////////////////////   //
+
+
+
+
+    </script>
+
+</body>
+</html> 
